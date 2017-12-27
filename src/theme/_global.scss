@@ -1,0 +1,71 @@
+@import './variables.scss';
+$primary-color: #333;
+$secondary-color: #666;
+$main-title-color: #0070BF;
+
+.no-padding {
+	padding: 0px;
+}
+.np-right {
+	padding-right:0px;
+}
+.np-left {
+	padding-left: 0px;
+}
+.np-top {
+	padding-top: 0px;
+}
+.np-bottom {
+	padding-bottom: 0px;
+}
+.no-margin {
+	margin: 0px;
+}
+.nm-bottom {
+	margin-bottom: 0px;
+}
+.nm-top {
+	margin-top: 0px;
+}
+.margin-top {
+	margin-top: 15px;
+}
+.margin-bottom {
+	margin-bottom: 15px;
+}
+.margin-left {
+	margin-left: 15px;
+}
+.margin-right {
+	margin-right: 15px;
+}
+.margin {
+	margin: 15px;
+}
+.padding {
+	padding: 15px;
+}
+.padding-top {
+	padding-top: 15px;
+}
+.padding-bottom {
+	padding-bottom: 15px;
+}
+.padding-left {
+	padding-left: 15px;
+}
+.padding-right {
+	padding-right: 15px;
+}
+.margin-vertical {
+	margin: 15px 0;
+}
+.margin-horizontal {
+	margin: 0px 15px;
+}
+.padding-vertical {
+	padding: 15px 0;
+}
+.padding-horizontal {
+	padding: 0px 15px;
+}

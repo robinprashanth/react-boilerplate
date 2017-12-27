@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const appConfigQa = require('./config/qa');
 const appConfigDev = require('./config/dev');
@@ -90,10 +90,6 @@ module.exports = (env) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: ['babel-loader', 'eslint-loader']
-        },
-        {
-          test: /\.js$/,
-          loader: 'ify-loader'
         },
         {
           test: /(\.css)$/,
