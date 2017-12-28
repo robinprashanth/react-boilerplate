@@ -5,3 +5,7 @@ export const LoginType = {
   LOGIN_ERROR: 'LOGIN_ERROR',
   LOGOUT_SUCCESS: 'LOGOUT_SUCCESS'
 };
+
+export const GlobalType = {
+  TOGGLE_SIDEBAR: 'TOGGLE_SIDEBAR'
+};

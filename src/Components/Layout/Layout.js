@@ -1,23 +1,23 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import setAuthorizationToken from '../../utils/setAuthorizationToken';
+import { Sidebar, Segment } from 'semantic-ui-react';
+import Header from '../Nav/Nav';
+import SidebarLeftPush from '../SidebarLeftPush/SidebarLeftPush';
+
 import './Layout.scss';
 
 class Layout extends React.Component {
-  componentWillMount() {
-    setAuthorizationToken(localStorage.getItem('jwtToken'));
-  }
   render() {
     return (
       <div>
-        <Header />
-        <div
-          className="container-fluid"
-        >
-          {this.props.children}
-        </div>
-        <Footer />
+        <Sidebar.Pushable className="layout" as={Segment}>
+          <SidebarLeftPush />
+          <Sidebar.Pusher>
+            <Segment basic>
+              <Header />
+              {this.props.children}
+            </Segment>
+          </Sidebar.Pusher>
+        </Sidebar.Pushable>
       </div>
     );
   }
